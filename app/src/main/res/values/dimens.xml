@@ -26,7 +26,7 @@
     <dimen name="margin_edit_text_signup">20dp</dimen>
     <dimen name="padding_navigation">16dp</dimen>
     <dimen name="text_of_list">15sp</dimen>
-    <dimen name="width_list_of_options">370dp</dimen>
+    <dimen name="width_list_of_options">400dp</dimen>
     <dimen name="heigth_list_of">70dp</dimen>
     <dimen name="textview_between">10dp</dimen>
     <dimen name="list_of_options">200dp</dimen>

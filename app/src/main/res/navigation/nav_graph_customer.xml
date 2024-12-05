@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_customer"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.HomeFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_home_business_side">
+
+        <argument
+            android:name="data"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/historyTurns"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.HistoryFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_history">
+        <argument
+            android:name="data"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FutureFragment"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.FutureFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_future">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ReturnToMainFragment"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.ReturnToMainFragment"
+        android:label="הבית חזרה למסך "
+        tools:layout="@layout/fragment_return_to_main">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/WaitListFragment"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.WaitListFragment"
+        android:label="צפייה בתורים ברשימות המתנה "
+        tools:layout="@layout/fragment_wait_list">
+
+    </fragment>
+</navigation>

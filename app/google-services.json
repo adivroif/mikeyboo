@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "363522226569",
+    "firebase_url": "https://mikeyboo-f2c59-default-rtdb.firebaseio.com",
+    "project_id": "mikeyboo-f2c59",
+    "storage_bucket": "mikeyboo-f2c59.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363522226569:android:a4b204965f9e1226b60958",
+        "android_client_info": {
+          "package_name": "com.example.mikeyboo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363522226569-1g6v7rogd04hh9fdi61d93svuta54auc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mikeyboo",
+            "certificate_hash": "dbe5d2c05d13e2841d40387dc2bddbb6be743cf5"
+          }
+        },
+        {
+          "client_id": "363522226569-4dj0cmvchi2m7f0eoiv4hjhkocu7ivok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmvPfQ7fJdLF8xOORMA1f6Cs7GYQsMKlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363522226569-4dj0cmvchi2m7f0eoiv4hjhkocu7ivok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

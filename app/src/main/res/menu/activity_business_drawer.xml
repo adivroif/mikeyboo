@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/ReturnToMain"
+            android:icon="@drawable/baseline_home_24"
+            android:title="מסך בית" />
+
+        <item
+            android:id="@+id/nav_hours_business"
+            android:icon="@drawable/baseline_access_time_24"
+            android:title="ניהול שעות עבודה" />
+
+        <item
+            android:id="@+id/nav_customer_list_business"
+            android:icon="@drawable/baseline_list_24"
+            android:title="רשימת לקוחות" />
+
+        <item
+            android:id="@+id/nav_turns_type_business"
+            android:icon="@drawable/baseline_list_24"
+            android:title="רשימת שירותים" />
+
+    </group>
+</menu>

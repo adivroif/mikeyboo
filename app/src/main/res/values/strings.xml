@@ -17,8 +17,8 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_home">מסך בית</string>
+    <string name="history">היסטוריית תורים</string>
     <string name="menu_slideshow">Slideshow</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -71,17 +71,31 @@
     <string name="phone_edit_text">טלפון</string>
     <string name="mail">מייל</string>
     <string name="full_name">שם מלא</string>
-    <string name="_270">בניה חדשה בג\'ל בניה - 270</string>
+    <string name="_270">בניה חדשה בגל בניה - 270</string>
     <string name="_15_40">ציור - 15-40</string>
     <string name="_40">הסרה - 40</string>
     <string name="_100">תיקון ציפורן - החל מ100</string>
     <string name="_60">מניקור - 60</string>
-    <string name="_140">מילוי בניה בג\'ל - 140</string>
-    <string name="_120">לק ג\'ל - 120</string>
+    <string name="_140">מילוי בניה בגל - 140</string>
+    <string name="_120">לק גל - 120</string>
     <string name="text">אז מה עושות היום ?</string>
-    <string name="works">העבודות שלי -</string>
+    <string name="Reviews">ביקורות עליי -</string>
     <string name="changeOrCancel">ביטול תור/שינוי מועד תור</string>
     <string name="add">קביעת תור</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
+    <string name="hey">היי ,</string>
+    <string name="title_activity_options_activty">OptionsActivty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_try_activty">tryActivtyActivity</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="future">תורים עתידיים</string>
+    <string name="_10_30">10:30</string>
+    <string name="_12_00">12:00</string>
+    <string name="_13_30">13:30</string>
+    <string name="_15_00">15:00</string>
+    <string name="_16_30">16:30</string>
+    <string name="_9_00">9:00</string>
+    <string name="title_activity_business_side">BusinessSideActivity</string>
 </resources>

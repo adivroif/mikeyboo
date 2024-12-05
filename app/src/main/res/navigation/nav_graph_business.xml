@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_business"
+    app:startDestination="@+id/home_business">
+
+    <fragment
+        android:id="@+id/home_business"
+        android:name="com.example.mikeyboo.fragmentsOfBusinessSide.HomeFragmentOfBusinessSide"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home_business_side" />
+
+    <fragment
+        android:id="@+id/HoursManagement"
+        android:name="com.example.mikeyboo.fragmentsOfBusinessSide.HoursFragment"
+        android:label="ניהול שעות עבודה"
+        tools:layout="@layout/fragment_hours" />
+
+    <fragment
+        android:id="@+id/ReturnToMainFragment"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.ReturnToMainFragment"
+        android:label="הבית חזרה למסך "
+        tools:layout="@layout/fragment_return_to_main">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/customerList"
+        android:name="com.example.mikeyboo.fragmentsOfBusinessSide.CustomerListFragment"
+        android:label="רשימת לקוחות"
+        tools:layout="@layout/fragment_customer_list" />
+
+    <fragment
+        android:id="@+id/turns_type_business"
+        android:name="com.example.mikeyboo.fragmentsOfBusinessSide.TurnsTypeFragment"
+        android:label="רשימת סוגי תורים"
+        tools:layout="@layout/fragment_turns_type" />
+
+</navigation>

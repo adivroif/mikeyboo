@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home_customer_side" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.FutureFragment"
+        android:label="תורים עתידיים"
+        tools:layout="@layout/fragment_future" />
+
+    <fragment
+        android:id="@+id/ReturnToMainFragment"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.ReturnToMainFragment"
+        android:label="חזרה למסך הבית"
+        tools:layout="@layout/fragment_return_to_main" />
+
+    <fragment
+        android:id="@+id/WaitListFragment"
+        android:name="com.example.mikeyboo.fragments_of_customer_side.WaitListFragment"
+        android:label="צפייה בתורים ברשימות המתנה"
+        tools:layout="@layout/fragment_wait_list" />
+</navigation>

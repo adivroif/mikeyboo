@@ -6,19 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pink"
-    tools:context=".signInActivity">
+    android:layout_centerInParent="true"
+    tools:context=".activities.signInActivity">
 
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/mikeyText"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
         android:text="@string/text_mikeyboo_nails"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="@dimen/margin_text_mikeyboo_nails"
+        android:layout_marginTop="150dp"
         android:textSize="@dimen/text_mikeyboo_nails_size"
         android:textStyle="bold"
         />
@@ -34,58 +34,11 @@
         android:textStyle="bold"
         android:layout_below="@id/mikeyText"/>
 
-    <LinearLayout
-        android:id="@+id/navigation"
-        android:layout_width="@dimen/width_navigation"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/address"
-        android:layout_height="@dimen/height_mikeyboo_nails"
-        android:layout_marginTop="@dimen/navigation_margin"
-        android:orientation="horizontal">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/instagram_icon"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/height_mikeyboo_nails"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:padding="@dimen/padding_each_icon"
-            android:src="@drawable/instagram" />
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/whatsapp_icon"
-            android:clickable="true"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/height_mikeyboo_nails"
-            android:layout_weight="1"
-            android:padding="@dimen/padding_each_icon"
-            android:src="@drawable/whatsapp" />
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/phone_icon"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/height_mikeyboo_nails"
-            android:layout_weight="1"
-            android:padding="@dimen/padding_each_icon"
-            android:clickable="true"
-            android:src="@drawable/phone_call" />
-
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/googleMap_icon"
-            android:clickable="true"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/height_mikeyboo_nails"
-            android:layout_weight="1"
-            android:padding="@dimen/padding_each_icon"
-            android:src="@drawable/placeholder" />
-    </LinearLayout>
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signin"
         android:layout_width="@dimen/login_width"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/navigation"
+        android:layout_below="@+id/address"
         android:layout_marginTop="@dimen/signin_screen_btn"
         android:backgroundTint="@color/white"
         android:text="@string/signin_btn"

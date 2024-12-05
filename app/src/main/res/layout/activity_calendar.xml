@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CalendarActivity"
+    android:background="@color/fui_linkColor">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="500dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/pink"/>
+
+
+    <LinearLayout
+        android:id="@+id/list_of_options1"
+        android:layout_width="400dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/calendarView"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/turn900"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="@string/_9_00"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_of_list"
+            android:textStyle="bold"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/frame_width" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/turn1030"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="@string/_10_30"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_of_list"
+            android:textStyle="bold"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/frame_width" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/turn1200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="@string/_12_00"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_of_list"
+            android:textStyle="bold"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/frame_width" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_choosePhoto"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/pink"
+        android:text="בחרי תמונה במידת הצורך"
+        android:textStyle="bold"
+        android:layout_below="@id/calendarView"
+        android:layout_alignParentRight="true"
+        app:cornerRadius="10dp"
+        />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/added_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/btn_choosePhoto"
+
+
+        />
+
+    <LinearLayout
+        android:id="@+id/list_of_options2"
+        android:layout_width="400dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:layout_below="@id/list_of_options1">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/turn1330"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="@string/_13_30"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_of_list"
+            android:textStyle="bold"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/frame_width" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/turn1500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="@string/_15_00"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_of_list"
+            android:textStyle="bold"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/frame_width" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/turn1630"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/_16_30"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_of_list"
+            android:textStyle="bold"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/frame_width"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/chooseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_of_list"
+        android:text="בחר"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/list_of_options2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ReturnToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_of_list"
+        android:text="חזרה למסך הבית"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/list_of_options2"
+        android:layout_alignParentLeft= "true"
+        android:layout_marginLeft="20dp"
+        />
+
+
+</RelativeLayout>

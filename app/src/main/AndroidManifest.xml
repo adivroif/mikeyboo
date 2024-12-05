@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,14 +17,35 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.Mikeyboo"
         tools:targetApi="31">
+
+        <service
+            android:name=".FirebaseID"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
         <activity
-            android:name=".signInActivity"
+            android:name=".activities.BusinessSideActivity"
+            android:exported="false"
+            android:label="@string/title_activity_business_side"
+            android:theme="@style/Theme.Mikeyboo.NoActionBar" />
+        <activity
+            android:name=".activities.CalendarActivity"
             android:exported="false" />
         <activity
-            android:name=".signupActivity"
+            android:name=".activities.OptionsActivty"
+            android:exported="false"
+            android:label="@string/title_activity_options_activty"
+            android:theme="@style/Theme.Mikeyboo.NoActionBar" />
+        <activity
+            android:name=".activities.signInActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.signupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,9 +53,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"/>
     </application>
 
 </manifest>

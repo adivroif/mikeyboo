@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".fragments_of_customer_side.HistoryFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/high_score_text"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="40dp"
+        android:gravity="center"
+        style="@style/Widget.Material3.TextInputEditText.FilledBox"
+        android:text="עדיין לא היו תורים , נתקן את זה בהמשך"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_LST_scores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        tools:listitem="@layout/forhistory"
+        />
+</RelativeLayout>

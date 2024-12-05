@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pink"
+    tools:context=".fragmentsOfBusinessSide.HoursFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <CheckBox
+                android:id="@+id/is_permanent_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="האם הלוח זמנים קבוע? " />
+
+            <LinearLayout
+                android:id="@+id/start_hour_layout_permenent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_start_hour_text_permenent"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_hour_text_permenent"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת התחלה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/end_hour_layout_permenent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_end_hour_text_permenent"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_hour_text_permenent"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת סיום:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_permenent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_text_permenent"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_text_permenent"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת תחילת הפסקה:"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_length_permenent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_time_text_permenent"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="משך זמן"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_time_text_permenent"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="משך זמן הפסקה:"
+
+                    />
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/send_btn_hours_permenent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:text="שלח"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/text_address_size"
+                android:textStyle="bold"
+                app:strokeColor="@color/black"
+                app:strokeWidth="@dimen/frame_width" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/day_sunday_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="יום ראשון :"
+                android:textSize="18sp"
+                android:layout_marginRight="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/start_hour_layout_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_start_hour_text_sunday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_hour_text_sunday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת התחלה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/end_hour_layout_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_end_hour_text_sunday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_hour_text_sunday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת סיום:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_text_sunday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_text_sunday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת תחילת הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_length_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_time_text_sunday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="משך זמן"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_time_text_sunday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="משך זמן הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/day_monday_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="יום שני :"
+                android:textSize="18sp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/start_hour_layout_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_start_hour_text_monday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_hour_text_monday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת התחלה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/end_hour_layout_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_end_hour_text_monday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_hour_text_monday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת סיום:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_time_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_text_monday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_text_monday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת תחילת הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_length_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_time_text_monday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="משך זמן"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_time_text_monday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="משך זמן הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/day_tuesday_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="יום שלישי :"
+                android:textSize="18sp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/start_hour_layout_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_start_hour_text_tuesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_hour_text_tuesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת התחלה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/end_hour_layout_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_end_hour_text_tuesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_hour_text_tuesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת סיום:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_text_tuesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_text_tuesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת תחילת הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_length_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_time_text_tuesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="משך זמן"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_time_text_tuesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="משך זמן הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/day_wednesday_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="יום רביעי :"
+                android:textSize="18sp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/start_hour_layout_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_start_hour_text_wednesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_hour_text_wednesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת התחלה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/end_hour_layout_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_end_hour_text_wednesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_hour_text_wednesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת סיום:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_text_wednesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_text_wednesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת תחילת הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_length_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_time_text_wednesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="משך זמן"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_time_text_wednesday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="משך זמן הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/day_thursday_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="יום חמישי :"
+                android:textSize="18sp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/start_hour_layout_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_start_hour_text_thursday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_hour_text_thursday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת התחלה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/end_hour_layout_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_end_hour_text_thursday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_hour_text_thursday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת סיום:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_text_thursday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_text_thursday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת תחילת הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_length_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_time_text_thursday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="משך זמן"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_time_text_thursday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="משך זמן הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/day_friday_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="יום שישי :"
+                android:textSize="18sp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/start_hour_layout_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_start_hour_text_friday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_hour_text_friday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת התחלה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/end_hour_layout_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_end_hour_text_friday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_hour_text_friday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת סיום:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_text_friday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="שעה"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_text_friday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="שעת תחילת הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/break_hour_layout_length_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_enter_break_hour_time_text_friday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:hint="משך זמן"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/break_hour_time_text_friday"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="משך זמן הפסקה:"
+
+                    />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/send_btn_hours_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:text="שלח"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/text_address_size"
+                android:textStyle="bold"
+                app:strokeColor="@color/black"
+                app:strokeWidth="@dimen/frame_width" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
